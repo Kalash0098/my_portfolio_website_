@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/da40d50599.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tech">TechStack</a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p> Full Stack Developer</p>
+            <h1>Hi, I'm <span>Kalash</span><br></h1>
+            <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+    </div>
+    
+</div>
+<!----------------------about----------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/guy.png" alt="">
+            </div>
+            <div class="about-col-2 ">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Kalash Pratapwar, a skilled full-stack developer based in Pune with a passion for building innovative and efficient web applications. My expertise spans across various front-end and back-end technologies such as JavaScript, React, Node.js, and Python, allowing me to create seamless user experiences and robust back-end systems.</p>
+                <br>
+                <p class="scnd">Let's connect and discuss how I can bring value to your next project!
+
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link">Education</p>
+                </div>
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2017-2019</span><br>HSC at SMD Bharti High School</li>
+                        <li><span>2019-2023</span><br>BE from D Y Patil College Of Enginnering Akurdi</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------Techstack----------------------->
+
+<div id="tech">
+    <div class="container">
+        <h1 class="sub-title">Tech-Stack I know</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Java/JavaEE </h2>
+               
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-c"></i>
+                <h2>C/C++  </h2>
+                
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>My SQL  </h2>
+                
+               
+            </div>
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>HTML </h2>
+                
+               
+            </div>
+            <div>
+                <i class="fa-brands fa-css3-alt"></i>
+                <h2>CSS </h2>
+                
+               
+            </div>
+            <div>
+                <i class="fa-brands fa-js"></i>
+                <h2>Javascript </h2>
+                
+               
+            </div>
+            <div>
+                <i class="fa-solid fa-computer"></i>
+                <h2>Hibernate </h2>
+                
+               
+            </div>
+            <div>
+                <i class="fa-solid fa-microchip"></i>
+                <h2>SpringBoot </h2>
+                
+               
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+<!----------------------services----------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Book Management System </h2>
+                <p>Book managing like adding, deleting, updating, reading books can  easily do this operation with user freindly interface.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Base Gear Design System </h2>
+                <p>A webpage were we add dimensions of gear and see if gear is working.</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!---------contact------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Let's Talk</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> kalashpratapwar655@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7666895001</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                
+            </div>
+            <div class="contact-right"></div>
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+</div>
+
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyhu-yywivHje3TJdxfdMweyTTt2YZVyR2LKK54otaqO7zbxpBfRSEMl7eJebpdzWHzNw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = ""
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
